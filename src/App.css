@@ -101,6 +101,15 @@ header {
   backdrop-filter: blur(2px);
 }
 
+.error {
+  color: #fff;
+  padding: 0.4rem;
+  background-color: orangered;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  z-index: 20;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -431,7 +440,10 @@ p.venue {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  /* align-items: center; */
+}
+
+.input-error {
+  box-shadow: 0 0 0 0.4rem orangered;
 }
 
 .label {

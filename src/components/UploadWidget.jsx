@@ -63,7 +63,11 @@ function UploadWidget({ setImageUrl }) {
           alt="Download icon"
           className="uploaded-img"
         />
-        <p>Drag & drop or click to upload</p>
+        <p>
+          {isLoading
+            ? "Please wait...     Modal will open shortly"
+            : "Drag & drop or click to upload"}
+        </p>
       </button>
     </div>
   );

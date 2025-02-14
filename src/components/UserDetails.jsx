@@ -75,12 +75,13 @@ function UserDetails({ setStep, setFormData, formData }) {
             <input
               {...register("fullName", { required: "Full name is required" })}
               type="text"
+              className={errors.fullName ? "input-error" : ""}
               aria-describedby="name-error"
             />
             {errors.fullName && (
-              <div id="name-error" className="error">
+              <span id="name-error" className="error">
                 {errors.fullName.message}
-              </div>
+              </span>
             )}
           </div>
 
@@ -98,12 +99,13 @@ function UserDetails({ setStep, setFormData, formData }) {
               })}
               type="email"
               placeholder="hello@avioflagos.io"
+              className={errors.email ? "input-error" : ""}
               aria-describedby="email-error"
             />
             {errors.email && (
-              <div id="email-error" className="error">
+              <span id="email-error" className="error">
                 {errors.email.message}
-              </div>
+              </span>
             )}
           </div>
 
