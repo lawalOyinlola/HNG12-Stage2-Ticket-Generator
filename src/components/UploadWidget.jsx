@@ -2,9 +2,7 @@
 import { useState } from "react";
 
 function UploadWidget({ setImageUrl }) {
-  const [imagePreview, setImagePreview] = useState(
-    localStorage.getItem("imageUrl") || ""
-  );
+  const [imagePreview, setImagePreview] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const openWidget = () => {

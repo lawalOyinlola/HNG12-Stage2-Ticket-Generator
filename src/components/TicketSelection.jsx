@@ -11,8 +11,8 @@ function TicketSelection({ setStep, setFormData }) {
     formState: { errors, isSubmitting },
   } = useForm({
     defaultValues: {
-      ticketType: localStorage.getItem("ticketType") || "regular",
-      quantity: localStorage.getItem("quantity") || "1",
+      ticketType: "regular",
+      quantity: "1",
     },
   });
 
@@ -31,13 +31,13 @@ function TicketSelection({ setStep, setFormData }) {
   };
 
   const handleCancel = () => {
-    reset();
     localStorage.removeItem("ticketType");
     localStorage.removeItem("quantity");
     localStorage.removeItem("fullName");
     localStorage.removeItem("email");
     localStorage.removeItem("request");
     localStorage.removeItem("imageUrl");
+    reset();
   };
 
   return (

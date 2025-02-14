@@ -251,7 +251,7 @@ header {
   width: 30rem;
   height: 60rem;
   margin: 0 auto;
-  background-image: url("./ticket-bg.png");
+  background-image: url("/ticket-bg.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

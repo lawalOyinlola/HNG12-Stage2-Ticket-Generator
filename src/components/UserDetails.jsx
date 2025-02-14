@@ -11,10 +11,10 @@ function UserDetails({ setStep, setFormData, formData }) {
     formState: { errors },
   } = useForm({
     defaultValues: {
-      fullName: localStorage.getItem("fullName") || "",
-      email: localStorage.getItem("email") || "",
-      specialRequest: localStorage.getItem("request") || "",
-      imageUrl: localStorage.getItem("imageUrl") || "",
+      fullName: "",
+      email: "",
+      specialRequest: "",
+      imageUrl: "",
     },
   });
 
