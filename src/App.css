@@ -157,6 +157,7 @@ header {
   gap: 8px;
   border-radius: 12px;
   border: 1px solid rgba(213, 234, 0, 0.1);
+  color: #0a0c11;
   background: #fff;
   transition: all 0.3s ease;
 }
@@ -477,6 +478,22 @@ textarea {
 
 fieldset {
   border: none;
+}
+
+.email-container {
+  position: relative;
+}
+
+.ticket-form .email-container input {
+  padding-left: 44px;
+}
+
+.email-icon {
+  position: absolute;
+  left: 12px;
+  top: 45px;
+  color: #999;
+  pointer-events: none;
 }
 
 .ticket-options {
